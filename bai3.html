@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let b='c';
+    let Upper=("ABCXZY");
+    let Lower=('abcxyz');
+    let result=[];
+    for (let i=0;i<b.length;i++){
+        if (Upper.indexOf(b[i]) !== -1){
+            result.push(b[i].toUpperCase())
+        }else {
+            if (Lower.indexOf(b[1]) !== -1) {
+                result.push(b[i].toLowerCase())
+
+            } else {
+                result.push(b[i])
+            }
+
+        }
+    }console.log(result.join(''))
+
+</script>
+</body>
+</html>
